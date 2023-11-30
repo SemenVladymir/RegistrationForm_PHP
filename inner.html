@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <form class="ui-form" action="index.php" method="POST">
+            <h3>Войти на сайт</h3>
+            <div class="form-row">
+                <input
+                        id="login"
+                        type="text"
+                        name="username"
+                        required autocomplete="username">
+                <label for="login">Enter login</label>
+            </div>
+            <div class="form-row">
+                <input
+                        id="password"
+                       type="password"
+                        name="userpass"
+                        required autocomplete="current-password">
+                <label for="password">Enter password</label>
+            </div>
+              <a href="registration.html">New registration</a>
+            <p><input type="submit" name="submit" value="Login"></p>
+        </form>
+    </body>
+</html>

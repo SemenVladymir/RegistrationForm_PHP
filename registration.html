@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form class="ui-form" action="index.php" method="POST">
+    <h3>Регистрация на сайте</h3>
+    <div class="form-row">
+        <input
+                id="login"
+                type="text"
+                name="username"
+                required autocomplete="off"
+                pattern="^[a-zA-z]{1}[a-zA-Z1-9]{7,29}$">
+        <label for="login">Enter login</label>
+    </div>
+    <div class="form-row">
+        <input
+                id="password"
+                type="password"
+                name="userpass"
+                required autocomplete="off"
+                pattern="^(?=(?:[^A-Z]*[A-Z]){2,4}[^A-Z]*$)(?=(?:[^a-z]*[a-z]){2,4}[^a-z]*$)(?=(?:\D*\d){2,4}\D*$)\S{8,30}$">
+        <label for="password">Enter password</label>
+    </div>
+    <div class="form-row">
+        <input
+                id="passwordagain"
+                type="password"
+                name="userpassagain"
+                required autocomplete="off"
+                pattern="^(?=(?:[^A-Z]*[A-Z]){2,4}[^A-Z]*$)(?=(?:[^a-z]*[a-z]){2,4}[^a-z]*$)(?=(?:\D*\d){2,4}\D*$)\S{8,30}$">
+        <label for="passwordagain">Confirm password</label>
+    </div>
+    <div class="form-row">
+        <input
+                id="email"
+                type="email"
+                name="useremail"
+                required autocomplete="off"
+                pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
+        <label for="email">Enter email</label>
+    </div>
+    <div class="form-row">
+        <input
+            id="birthday"
+            type="text"
+            name="userbirthday"
+            onfocus="(this.type='date')"
+            onblur="if(!this.value)this.type='text'"
+            required autocomplete="off">
+        <label for="birthday">Enter birthday</label>
+    </div>
+    <p><input type="submit" name="submit" value="Registration"></p>
+</form>
+</body>
+</html>
