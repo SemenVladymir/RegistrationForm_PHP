@@ -73,7 +73,11 @@ body {
     outline: 0;
     border-color: #F77A52;
 }
-.form-row input:focus+label, .form-row input:valid+label {
+.form-row input:valid {
+    outline: 0;
+    border-color: #1d7408;
+}
+.form-row input:focus+label{
     transform: translateY(-60px);
     margin-left: -14px;
     font-size: 14px;
@@ -82,7 +86,15 @@ body {
     border-color: #F77A52;
     color: #F77A52;
 }
-
+.form-row input:valid+label{
+    transform: translateY(-60px);
+    margin-left: -14px;
+    font-size: 14px;
+    font-weight: 400;
+    outline: 0;
+    border-color: #1d7408;
+    color: #1d7408;
+}
 .ui-form input[type="submit"] {
     width: 100%;
     padding: 0;
